@@ -1,0 +1,220 @@
+@font-face {
+  font-family: "Intro Regular";
+  src: url("../assets/fonts/fonts_intro/intro-regular.eot");
+  src: url("../assets/fonts/fonts_intro/intro-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/fonts_intro/intro-regular.woff2")
+      format("woff2"),
+    url("../assets/fonts/fonts_intro/intro-regular.woff")
+      format("woff"),
+    url("../assets/fonts/fonts_intro/intro-regular.ttf")
+      format("truetype"),
+    url("../assets/fonts/fonts_intro/intro-regular.svg#intro-regular")
+      format("svg");
+}
+@font-face {
+  font-family: "Roboto Slab Regular";
+  src: url("../assets/fonts/fonts_robo/roboto_slab_regular.eot"); /* IE 9 Compatibility Mode */
+  src: url("../assets/fonts/fonts_robo/roboto_slab_regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE < 9 */
+      url("../assets/fonts/fonts_robo/roboto_slab_regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../assets/fonts/fonts_robo/roboto_slab_regular.woff")
+      format("woff"),
+    /* Firefox >= 3.6, any other modern browser */
+      url("../assets/fonts/fonts_robo/roboto_slab_regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../assets/fonts/fonts_robo/roboto_slab_regular.svg#roboto_slab_regular")
+      format("svg"); /* Chrome < 4, Legacy iOS */
+}
+:root {
+  font-family: Roboto Slab Regular, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+
+  color: #000000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 76px;
+  padding-right: 74px;
+  padding-top: 90px;
+  width: 1290px;
+}
+.header__button-cart,
+.subscribe__submit-button {
+  background-color: #5222d0;
+  border: #5222d0;
+  border-radius: 30px;
+  padding-left: 16px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-right: 12px;
+  font-size: 13px;
+  line-height: 13px;
+  font-family: Intro Regular, sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header__button-cart-icon {
+  padding-left: 5px;
+}
+.home-page {
+  display: grid;
+  grid-template-columns: 658px 1fr;
+  width: 1440px;
+}
+.about {
+  grid-column: 1 / 2;
+}
+.about__title {
+  font-family: Intro Regular, sans-serif;
+  font-size: 60px;
+  line-height: 72px;
+  padding-left: 126px;
+  margin-bottom: 20px;
+  margin-top: 76px;
+}
+.about__text {
+  font-size: 20px;
+  line-height: 32px;
+  margin-left: 126px;
+}
+.about__button-buy {
+  font-family: Intro Regular, sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #5222d0;
+  border: #5222d0;
+  border-radius: 45px;
+  font-size: 35px;
+  line-height: 35px;
+  padding-left: 33px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-right: 32px;
+  margin-left: 116px;
+  margin-top: 30px;
+}
+.about__button-buy-icon {
+  padding-left: 17px;
+}
+.main-image {
+  position: absolute;
+  width: 783px;
+  height: 724px;
+  left: 657px;
+  top: 130px;
+}
+.main-image__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.footer {
+  width: 658px;
+  margin-bottom: 80px;
+  margin-top: 146px;
+  font-size: 20px;
+  line-height: 32px;
+}
+.footer__navigation-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding-left: 128px;
+}
+.footer__navigation-item-main a {
+  color: #5222d0;
+  text-decoration: none;
+}
+.features {
+  display: block;
+}
+.features__title {
+  font-family: Intro Regular, sans-serif;
+  font-size: 60px;
+  line-height: 72px;
+  padding-left: 126px;
+  margin-bottom: 40px;
+  margin-top: 89px;
+  text-transform: uppercase;
+}
+.features-list {
+  display: grid;
+  grid-template-columns: repeat(3, 365px);
+  grid-template-rows: 466px 233px;
+  column-gap: 73px;
+  row-gap: 50px;
+  margin-left: 126px;
+}
+.features-list__item_1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.features-list__item_2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.features-list__item_3 {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+.features-list__item_4 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+.features-list__item_5 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.features-list__item-title,
+.subscribe__title {
+  font-family: Intro Regular, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.subscribe {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #ec615b;
+}
+.subscribe__title {
+  color: #ffffff;
+  margin-bottom: 6px;
+  padding-left: 18px;
+  margin-top: 25px;
+}
+.subscribe__contact-form,
+.subscribe__submit-button {
+  margin-left: 18px;
+}
+.subscribe__contact-form {
+  border: none;
+  width: 323px;
+  height: 50px;
+  margin-bottom: 23px;
+}
+.subscribe__contact-form::placeholder {
+  opacity: 1;
+  margin-left: 10px;
+}
+.footer__navigation-item a {
+  color: #000000;
+  text-decoration: none;
+}
